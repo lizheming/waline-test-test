@@ -3,15 +3,16 @@
   "github": {
     "silent": true
   },
-  "functions": {
-    "api/index.js": {
-      "runtime": "@vercel/node@2.5.11"
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node@2.5.10"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api/index.js"
+      "dest": "index.js"
     }
   ]
 }
