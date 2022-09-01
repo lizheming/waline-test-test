@@ -4,14 +4,14 @@
     "silent": true
   },
   "functions": {
-    "index.js": {
+    "api/index.js": {
       "runtime": "@vercel/node@2.5.11"
     }
   },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.js"
+      "dest": "api/index.js"
     }
   ]
 }
